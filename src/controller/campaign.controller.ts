@@ -2,7 +2,6 @@ import { Response } from 'express';
 import { Campaign } from '../entity/Campaign';
 import { Message } from '../entity/Message';
 import { IGetUserAuthInfoRequest } from '../definition';
-import AppDataSource from '../data-source';
 
 class CampaignController {
     async createCampaign(req: IGetUserAuthInfoRequest, res: Response) {
@@ -11,7 +10,7 @@ class CampaignController {
             const myCampaign = new Campaign();
             myCampaign.userID = userId;
             myCampaign.campaign_name = campaignName;
-            Campaign.getRepository().save(myCampaign);
+            await Campaign.getRepository().save(myCampaign);
             return res.status(201).send({ message: 'Success' });
         } else {
             return res.status(400).send({ message: 'Already exist name' });
@@ -32,7 +31,7 @@ class CampaignController {
 
     async deleteCampaign(req: IGetUserAuthInfoRequest, res: Response) {
         const { messageList: message, campaignOne: campaign } = req;
-        if (!!campaign) {
+        if (campaign) {
             await Message.remove(message);
             await Campaign.remove(campaign);
             return res.status(200).send({ message: 'Success' });

@@ -49,8 +49,8 @@ router.get(
 
 router.get(
     '/main',
-    filterOrmController.mainInfluencerList,
-    filterController.mainInfluencerList
+    wrapAsyncController(filterOrmController.mainInfluencerList),
+    wrapAsyncController(filterController.mainInfluencerList)
 );
 
 export default router;

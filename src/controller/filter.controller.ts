@@ -66,10 +66,12 @@ class FilterController {
     }
 
     async mainInfluencerList(req: IGetUserAuthInfoRequest, res: Response) {
-        const { influencerListDown } = req;
-        return res
-            .status(200)
-            .send({ message: 'Success', result: influencerListDown });
+        const { influencerListDown, count } = req;
+        return res.status(200).send({
+            message: 'Success',
+            result: influencerListDown,
+            count,
+        });
     }
 
     async influencerImageList(req: IGetUserAuthInfoRequest, res: Response) {

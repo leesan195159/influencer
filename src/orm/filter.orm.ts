@@ -241,7 +241,7 @@ class FilterOrmController {
             },
         });
         const influencerIdList = influencerList.map(item => item.influencer.id);
-        const [influencerListDown] = await Influencer.findAndCount({
+        const [influencerListDown, count] = await Influencer.findAndCount({
             relations: {
                 influencer_categories: { category: true },
                 influencer_hashtags: { hashtag: true },
@@ -252,6 +252,7 @@ class FilterOrmController {
             take: 5,
         });
         req.influencerListDown = influencerListDown;
+        req.count = count;
         next();
     }
     async findInfluencerImageList(

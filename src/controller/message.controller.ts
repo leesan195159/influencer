@@ -13,7 +13,7 @@ class MessageController {
             influencerIdList1,
             influencerIdList2,
         } = req;
-        const statusID = 1;
+        const statusId = 1;
         if (
             influencerIdList.length > 0 &&
             influencerIdList1.length > 0 &&
@@ -30,13 +30,13 @@ class MessageController {
                     },
                 });
                 const newMessage = new Message();
-                const touchContent =
+                const newContent =
                     `안녕하세요. ${influencer.influencer_instagram_id}님 ${brandName}입니다.\n ` +
                     content;
                 newMessage.campaignID = campaignId;
-                newMessage.statusID = statusID;
+                newMessage.statusID = statusId;
                 newMessage.influencerID = influencer.id;
-                newMessage.message_content = touchContent;
+                newMessage.message_content = newContent;
                 await Message.save(newMessage);
                 continue;
             }
