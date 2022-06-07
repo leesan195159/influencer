@@ -6,7 +6,6 @@ Influencer - 신생 및 중소 기업을 타겟으로 한 인플루언서 컨택
 
 <h2>초기기획 & ERD</h2>
 <h3>ERD</h3>
-<image src='https://user-images.githubusercontent.com/86543366/164616537-0c216ef3-5bcd-466a-90e9-81850cb46cac.png' />
 <img width="752" alt="스크린샷 2022-05-19 오후 6 59 33" src="https://user-images.githubusercontent.com/86543366/172365580-7f992282-9597-4ee7-a7ed-ad05b832bb1f.png">
 
 <h3>User flow</h3>
