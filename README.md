@@ -1,7 +1,57 @@
-# Awesome Project Build with TypeORM
+<h2>Target site</h2>
+<h3>사이트 소개</h3>
+Influencer - 신생 및 중소 기업을 타겟으로 한 인플루언서 컨택 사이트
+<h3>기획 목표</h3>
+시스템이 갖추어져 있지 않지만 인플루언서가 필요한 신생 및 중소 기업이 월 정액을 지불하고 원하는 인플루언서를 검색하여 컨택할 수 있는 플랫폼
 
-Steps to run this project:
+<h2>초기기획 & ERD</h2>
+<h3>ERD</h3>
+<image src='https://user-images.githubusercontent.com/86543366/164616537-0c216ef3-5bcd-466a-90e9-81850cb46cac.png' />
+<img width="752" alt="스크린샷 2022-05-19 오후 6 59 33" src="https://user-images.githubusercontent.com/86543366/172365580-7f992282-9597-4ee7-a7ed-ad05b832bb1f.png">
 
-1. Run `npm i` command
-2. Setup database settings inside `data-source.ts` file
-3. Run `npm start` command
+<h3>User flow</h3>
+메인페이지 > 회원가입/로그인(카카오톡 소셜 로그인) > 마이페이지 포인트 충전 > 카테고리 및 상품 리스트 > 검색 > 상세페이지 > 상품 예약 > 예약 확인 및 환불
+<h3>Host flow</h3>
+호스트: 메인페이지 > 회원가입/로그인(카카오톡 소셜 로그인) > 호스트 등록 > 상품 등록 > 등록한 상품 확인
+<h3>초기기획 및 구현 목표</h3>
+1. 회원가입 및 로그인
+- 카카오톡 소셜 로그인 구현
+2. 유저 마이페이지
+- 후기 리스트, 신청 및 환불 내역, 결제 금액 충전
+3. 호스트 관리실
+- 상품 등록, 상품 리스트 확인, 상품 상태 확인
+4. 카테고리 상품 리스트
+- 카테고리별 전체 상품 리스트
+5. 상품 디테일 페이지
+- 예약, 후기, 상품 정보, 호스트 정보
+
+<h2>개발기간 및 팀원</h2>
+<h3>개발기간</h3>
+개발기간 : 2022/4/11 ~ 2022/4/22
+<h3>개발인원 및 파트</h3>
+팀원 : <프론트엔드> 김재도, 노규현, 박경서 // <백엔드> 황정현, 최창환, 이산
+
+<h2>적용 기술 및 구현 기능</h2>
+<h3>기술 스택</h3>
+python, django, mysql, AWS, JWT, Bcrypt, s3, boto3
+<h3>구현기능</h3>
+1. 회원가입 및 로그인
+- 카카오톡 소셜 로그인 구현
+2. 유저 마이페이지
+- 후기 리스트, 신청 및 환불 내역, 결제 금액 충전, 예약 및 예약 취소
+3. 호스트 관리실
+- 상품 등록, 상품 리스트 확인, 상품 상태 확인
+4. 카테고리 상품 리스트
+- 카테고리별 전체 상품 리스트
+5. 상품 디테일 페이지
+- 예약, 후기, 상품 정보, 호스트 정보, 위치 정보
+<h2>API DOC</h2>
+엔드포인트별 기능 정의</br>
+포스트맨을 이용하여 엔드포인트 정의 및 공유
+
+링크: https://warped-water-28282.postman.co/workspace/With-Me~7ec92774-1f84-442d-bc4a-3acc5cc318b8/request/20075057-553f39ef-dab5-4deb-a9c4-1d0dd536a7c8
+
+<img width="1061" alt="스크린샷 2022-04-22 오후 2 55 01" src="https://user-images.githubusercontent.com/86543366/164612285-3e575c49-8750-4e38-bef1-41ea52ef5369.png">
+
+<h2>시연 영상</h2>
+링크: https://www.youtube.com/watch?v=wBV60K5xuwg
