@@ -24,14 +24,14 @@ nodeJs, express, mysql, Typeorm
 1. 회원가입 및 로그인
 2. 인플루언서 필터링(팔로워, 게시물, 평균 좋아요, 평균 댓글) 및 솔팅(오름차순 및 내림차순) 기능
 3. 검색 기능
-  - 입력한 단어가 완전 일치할 경우에 검색되도록 구현(스페이스 및 대소문자 자동 구별)
+- 입력한 단어가 완전 일치할 경우에 검색되도록 구현(스페이스 및 대소문자 자동 구별)
 5. 캠페인
-  - 생성
-  - 수정
-  - 삭제
+- 생성
+- 수정
+- 삭제
 7. 인플루언서
-  - 추가
-  - 삭제
+- 추가
+- 삭제
 8. 메시지 생성 및 삭제
 9. 인플루언서 및 갬페인 카운트 기능
 
@@ -41,5 +41,5 @@ nodeJs, express, mysql, Typeorm
 
 링크: [https://warped-water-28282.postman.co/workspace/With-Me~7ec92774-1f84-442d-bc4a-3acc5cc318b8/request/20075057-553f39ef-dab5-4deb-a9c4-1d0dd536a7c8](https://warped-water-28282.postman.co/workspace/influence~7ec92774-1f84-442d-bc4a-3acc5cc318b8/folder/20029878-91487eef-2f9d-44dd-af39-3d2d1b78b067?ctx=documentation)
 
-<img width="1061" alt="스크린샷 2022-04-22 오후 2 55 01" src="https://user-images.githubusercontent.com/86543366/164612285-3e575c49-8750-4e38-bef1-41ea52ef5369.png">
+<img width="822" alt="스크린샷 2022-06-07 오후 11 12 35" src="https://user-images.githubusercontent.com/86543366/172402420-e669f9f2-448e-4898-9065-f2dbd1c2d763.png">
 
