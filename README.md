@@ -39,7 +39,5 @@ nodeJs, express, mysql, Typeorm
 엔드포인트별 기능 정의</br>
 포스트맨을 이용하여 엔드포인트 정의 및 공유
 
-링크: [https://warped-water-28282.postman.co/workspace/With-Me~7ec92774-1f84-442d-bc4a-3acc5cc318b8/request/20075057-553f39ef-dab5-4deb-a9c4-1d0dd536a7c8](https://warped-water-28282.postman.co/workspace/influence~7ec92774-1f84-442d-bc4a-3acc5cc318b8/folder/20029878-91487eef-2f9d-44dd-af39-3d2d1b78b067?ctx=documentation)
-
 <img width="822" alt="스크린샷 2022-06-07 오후 11 12 35" src="https://user-images.githubusercontent.com/86543366/172402420-e669f9f2-448e-4898-9065-f2dbd1c2d763.png">
 
